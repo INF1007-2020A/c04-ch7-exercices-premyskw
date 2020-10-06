@@ -26,6 +26,26 @@ def plus_haute_frequence(entree):
     la_plus_haute = frequence(entree)
     return la_plus_haute[0]
 
+# Exercice 3
+def arbre(longueur,t):
+    if longueur > 3:
+        t.forward(longueur)
+        t.right(20)
+        arbre(longueur-10,t)
+        t.left(40)
+        arbre(longueur-10,t)
+        t.right(20)
+        t.backward(longueur)
+
+def appel_arbre():
+    t = turtle.Turtle()
+    t.left(90)
+    t.up()
+    t.backward(100)
+    t.down()
+    t.color("green")
+    arbre(75,t)
+
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
 
