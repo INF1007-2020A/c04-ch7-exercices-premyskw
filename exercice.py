@@ -30,11 +30,11 @@ def plus_haute_frequence(entree):
 def arbre(longueur,t):
     if longueur > 3:
         t.forward(longueur)
-        t.right(20)
+        t.right(10)
         arbre(longueur-10,t)
-        t.left(40)
+        t.left(20)
         arbre(longueur-10,t)
-        t.right(20)
+        t.right(10)
         t.backward(longueur)
 
 def appel_arbre():
@@ -46,6 +46,13 @@ def appel_arbre():
     t.color("green")
     arbre(75,t)
 
+# Exercice 4
+def is_valid(entree):
+    if ((('a' in entree) or ('t' in entree) or ('g' in entree) or ('c' in entree)) and (not ' ' in entree)):
+        return True
+    else:
+        return False
+def 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
 
