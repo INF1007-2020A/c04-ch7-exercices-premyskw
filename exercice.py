@@ -52,7 +52,8 @@ def is_valid(entree):
         return True
     else:
         return False
-def 
+def saisie(entree):
+    
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
 
